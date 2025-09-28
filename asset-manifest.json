@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/AmeenaK04.github.io/static/css/main.86a40fd7.css",
-    "main.js": "/AmeenaK04.github.io/static/js/main.f3208b07.js",
-    "static/js/453.96453769.chunk.js": "/AmeenaK04.github.io/static/js/453.96453769.chunk.js",
-    "index.html": "/AmeenaK04.github.io/index.html",
-    "main.86a40fd7.css.map": "/AmeenaK04.github.io/static/css/main.86a40fd7.css.map",
-    "main.f3208b07.js.map": "/AmeenaK04.github.io/static/js/main.f3208b07.js.map",
-    "453.96453769.chunk.js.map": "/AmeenaK04.github.io/static/js/453.96453769.chunk.js.map"
+    "main.css": "/static/css/main.86a40fd7.css",
+    "main.js": "/static/js/main.b3da1f41.js",
+    "static/js/453.96453769.chunk.js": "/static/js/453.96453769.chunk.js",
+    "index.html": "/index.html",
+    "main.86a40fd7.css.map": "/static/css/main.86a40fd7.css.map",
+    "main.b3da1f41.js.map": "/static/js/main.b3da1f41.js.map",
+    "453.96453769.chunk.js.map": "/static/js/453.96453769.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.86a40fd7.css",
-    "static/js/main.f3208b07.js"
+    "static/js/main.b3da1f41.js"
   ]
 }
