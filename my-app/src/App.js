@@ -13,7 +13,7 @@ function App() {
       setText(fullText.slice(0, index + 1));
       index++;
       if (index === fullText.length) clearInterval(interval);
-    }, 150); // typing speed 
+    }, 150);
 
     return () => clearInterval(interval);
   }, []);
@@ -33,45 +33,33 @@ function App() {
               <li><a href="#projects">Projects</a></li>
             </ul>
           </div>
-
           <div className="right-nav">
-            <a href="https://github.com/AmeenaK04" target="_blank" rel="noopener noreferrer">
-              <FaGithub />
-            </a>
-            <a href="https://www.linkedin.com/in/ameena-k-ba2920264/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin />
-            </a>
-            <a href="mailto:ameenakamali25@gmail.com">
-              <FaEnvelope />
-            </a>
+            <a href="https://github.com/AmeenaK04" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+            <a href="https://www.linkedin.com/in/ameena-k-ba2920264/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a href="mailto:ameenakamali25@gmail.com"><FaEnvelope /></a>
           </div>
         </nav>
 
         {/* Hero Section */}
         <section className="hero" id="home">
           <div className="robot-container">
-            <svg viewBox="0 0 120 120" width="200" height="200">
+            <svg viewBox="0 0 200 200" width="300" height="300">
               {/* Head */}
-              <rect x="30" y="20" width="60" height="40" rx="8" ry="8" fill="#20c997" />
-
+              <rect x="60" y="30" width="80" height="50" rx="10" ry="10" fill="#0b4d4b" stroke="#20c997" strokeWidth="2" />
               {/* Eyes */}
-              <circle className="eye" cx="45" cy="40" r="5" fill="#ffffff" />
-              <circle className="eye" cx="75" cy="40" r="5" fill="#ffffff" />
-
-              {/* Pupils (animated) */}
-              <circle className="pupil" cx="45" cy="40" r="2" fill="#000000" />
-              <circle className="pupil" cx="75" cy="40" r="2" fill="#000000" />
-
+              <circle className="eye" cx="80" cy="50" r="6" fill="#ffffff" />
+              <circle className="eye" cx="120" cy="50" r="6" fill="#ffffff" />
+              {/* Pupils */}
+              <circle className="pupil" cx="80" cy="50" r="2.5" fill="#000000" />
+              <circle className="pupil" cx="120" cy="50" r="2.5" fill="#000000" />
               {/* Antennas */}
-              <line className="antenna-left" x1="35" y1="20" x2="25" y2="10" stroke="#20c997" strokeWidth="3" strokeLinecap="round"/>
-              <line className="antenna-right" x1="85" y1="20" x2="95" y2="10" stroke="#20c997" strokeWidth="3" strokeLinecap="round"/>
-
+              <line className="antenna-left" x1="65" y1="30" x2="50" y2="15" stroke="#26c2b0" strokeWidth="2" strokeLinecap="round" />
+              <line className="antenna-right" x1="135" y1="30" x2="150" y2="15" stroke="#26c2b0" strokeWidth="2" strokeLinecap="round" />
               {/* Body */}
-              <rect x="35" y="60" width="50" height="40" rx="6" ry="6" fill="#1ca683" />
-
+              <rect x="60" y="85" width="80" height="50" rx="8" ry="8" fill="#073634" stroke="#20c997" strokeWidth="2" />
               {/* Arms */}
-              <rect className="arm-left" x="20" y="60" width="15" height="25" fill="#20c997" />
-              <rect className="arm-right" x="85" y="60" width="15" height="25" fill="#20c997" />
+              <rect className="arm-left" x="25" y="85" width="25" height="30" fill="#0b4d4b" stroke="#20c997" strokeWidth="1" />
+              <rect className="arm-right" x="150" y="85" width="25" height="30" fill="#0b4d4b" stroke="#20c997" strokeWidth="1" />
             </svg>
           </div>
 
@@ -88,22 +76,22 @@ function App() {
           </p>
           <p>Here are some technologies I have worked with:</p>
           <div className="tech-badges">
-            <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-            <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-            <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
-            <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html&logoColor=white" alt="HTML" />
-            <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css&logoColor=white" alt="CSS" />
-            <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C" />
-            <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
-            <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" alt="C#" />
-            <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+            <img src="https://img.shields.io/badge/Python-20c997?style=for-the-badge&logo=python&logoColor=black&color=white" alt="Python" />
+            <img src="https://img.shields.io/badge/JavaScript-20c997?style=for-the-badge&logo=javascript&logoColor=black&color=white" alt="JavaScript" />
+            <img src="https://img.shields.io/badge/React-20c997?style=for-the-badge&logo=react&logoColor=black&color=white" alt="React" />
+            <img src="https://img.shields.io/badge/PHP-20c997?style=for-the-badge&logo=php&logoColor=black&color=white" alt="PHP" />
+            <img src="https://img.shields.io/badge/HTML-20c997?style=for-the-badge&logo=html&logoColor=black&color=white" alt="HTML" />
+            <img src="https://img.shields.io/badge/CSS-20c997?style=for-the-badge&logo=css&logoColor=black&color=white" alt="CSS" />
+            <img src="https://img.shields.io/badge/C-20c997?style=for-the-badge&logo=c&logoColor=black&color=white" alt="C" />
+            <img src="https://img.shields.io/badge/C++-20c997?style=for-the-badge&logo=cplusplus&logoColor=black&color=white" alt="C++" />
+            <img src="https://img.shields.io/badge/C%23-20c997?style=for-the-badge&logo=csharp&logoColor=black&color=white" alt="C#" />
+            <img src="https://img.shields.io/badge/TypeScript-20c997?style=for-the-badge&logo=typescript&logoColor=black&color=white" alt="TypeScript" />
           </div>
           <p>Tools & Platforms:</p>
           <div className="tech-badges">
-            <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-            <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL" />
-            <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+            <img src="https://img.shields.io/badge/Git-20c997?style=for-the-badge&logo=git&logoColor=black&color=white" alt="Git" />
+            <img src="https://img.shields.io/badge/SQL-20c997?style=for-the-badge&logo=mysql&logoColor=black&color=white" alt="SQL" />
+            <img src="https://img.shields.io/badge/MongoDB-20c997?style=for-the-badge&logo=mongodb&logoColor=black&color=white" alt="MongoDB" />
           </div>
           <p>
             Outside of academics and work, I enjoy playing chess, reading books, building robots, and playing video games in my free time.
@@ -114,23 +102,10 @@ function App() {
         <section className="section" id="experience">
           <h3>Experience</h3>
           <div className="experience-container">
-            {/* Left Side Navbar */}
             <div className="experience-nav">
-              <button
-                className={activeExperience === "barclays" ? "active" : ""}
-                onClick={() => setActiveExperience("barclays")}
-              >
-                Barclays
-              </button>
-              <button
-                className={activeExperience === "sheffield" ? "active" : ""}
-                onClick={() => setActiveExperience("sheffield")}
-              >
-                Sheffield Hallam
-              </button>
+              <button className={activeExperience === "barclays" ? "active" : ""} onClick={() => setActiveExperience("barclays")}>Barclays</button>
+              <button className={activeExperience === "sheffield" ? "active" : ""} onClick={() => setActiveExperience("sheffield")}>Sheffield Hallam</button>
             </div>
-
-            {/* Right Side Content */}
             <div className="experience-content">
               {activeExperience === "barclays" && (
                 <div className="experience-item">
@@ -145,7 +120,6 @@ function App() {
                   </ul>
                 </div>
               )}
-
               {activeExperience === "sheffield" && (
                 <div className="experience-item">
                   <h4>Course Ambassador & General Ambassador • June 2023 – Present</h4>
@@ -164,37 +138,54 @@ function App() {
         <section className="section" id="projects">
           <h3>Projects</h3>
           <div className="projects-container">
+
+            {/* MiniApp */}
             <div className="project-card">
-              <a href="https://github.com/AmeenaK04/MiniApps" target="_blank" rel="noopener noreferrer" className="github-link">
-                <FaGithub />
-              </a>
+              <a href="https://github.com/AmeenaK04/MiniApps" target="_blank" rel="noopener noreferrer" className="github-link"><FaGithub /></a>
               <h4>MiniApp</h4>
-              <p>The MiniApps Project is a collection of console-based C# applications designed to demonstrate simple yet functional utilities.</p>
+              <p>Collection of console-based applications designed to demonstrate simple yet functional utilities.</p>
+              <p>C#</p>
             </div>
 
+            {/* Pomodoro Timer */}
             <div className="project-card">
-              <a href="https://github.com/AmeenaK04/Pomodoro_timer" target="_blank" rel="noopener noreferrer" className="github-link">
-                <FaGithub />
-              </a>
+              <a href="https://github.com/AmeenaK04/Pomodoro_timer" target="_blank" rel="noopener noreferrer" className="github-link"><FaGithub /></a>
               <h4>Pomodoro Timer</h4>
               <p>Focus timer app to boost productivity using Pomodoro technique.</p>
+              <p>Python</p>
             </div>
 
+            {/* Calculation */}
             <div className="project-card">
-              <a href="https://github.com/AmeenaK04/Calculation" target="_blank" rel="noopener noreferrer" className="github-link">
-                <FaGithub />
-              </a>
+              <a href="https://github.com/AmeenaK04/Calculation" target="_blank" rel="noopener noreferrer" className="github-link"><FaGithub /></a>
               <h4>Calculation</h4>
               <p>Simple calculator application.</p>
+              <p>Python</p>
             </div>
 
+            {/* Hospital Management System */}
             <div className="project-card">
-              <a href="https://github.com/AmeenaK04/Hospital_Management_System" target="_blank" rel="noopener noreferrer" className="github-link">
-                <FaGithub />
-              </a>
+              <a href="https://github.com/AmeenaK04/Hospital_Management_System" target="_blank" rel="noopener noreferrer" className="github-link"><FaGithub /></a>
               <h4>Hospital Management System</h4>
               <p>A management system to organize patient records and hospital operations.</p>
+              <p>PHP, SQL, HTML, CSS</p>
             </div>
+
+            {/* Sheffield Hallam University Projects */}
+            <div className="project-card tooltip-card">
+              <h4>University Projects & Modules • Sheffield Hallam University</h4>
+              <p className="tooltip-text">
+                <strong>Automating CGFCA for AI:</strong> Refactored legacy Conceptual Graph & Formal Concept Analysis tools into a modern NodeJS app, automating knowledge graph validation/reporting. Integrated CSV and draw.io for streamlined AI workflow analysis and enterprise data visualization.<br />
+                <strong>Farming Dashboard:</strong> Interactive dashboard to monitor and visualize crop data for decision-making.<br />
+                <strong>Mini Applications:</strong> Small C# tools (calculator, square root, text encryption/decryption) to demonstrate core programming/problem-solving skills.<br />
+                <strong>Mini Gym:</strong> Full-stack gym website with membership management, staff CRUD operations, user authentication, payments, and automated tracking (PHP, HTML, CSS, SQL).<br />
+                <strong>Hospital Management System:</strong> Full-stack web app for patient, staff, and admin management with authentication, CRUD, and database integration (PHP, HTML, CSS, SQL).<br />
+                <strong>Tic Tac Toe:</strong> AI-powered game with rule-based strategies, Mini-Max + alpha-beta pruning, extended 5x5 boards, and performance evaluation (Python).<br />
+                <strong>Algorithms & Databases:</strong> Implemented efficient data structures/algorithms for problem-solving and data management (C#).<br />
+                <strong>Fake File System:</strong> C++ console app simulating an in-memory file system with navigation, file operations, sorting, and command-based interaction. Applied OOP, memory management, and advanced C++ concepts.
+              </p>
+            </div>
+
           </div>
         </section>
 
